@@ -1,0 +1,153 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{hyperref}
+
+\title{Pascal's Triangles}
+\author{Univ. of Minnesota MathCEP}
+
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+
+\begin{abstract}
+  In this activity, you will discover the issue involved in using the Law of Sines and Law of Cosines to solve triangles.
+\end{abstract}
+
+\maketitle
+
+\begin{enumerate} 
+
+\item In how many ways can two colored balls, red (R) and blue (B) be arranged in order?
+
+\bigskip
+
+{\bf {Answer:}} 2 - RB and BR
+
+\item In how many ways can three colored balls, red (R), blue (B) and yellow (Y) be arranged in order? Write out the complete list.
+
+\item In how many ways can four colored balls, red (R), blue (B), yellow (Y) and green (G) be arranged in order?
+
+\begin{itemize}
+
+\item Person 1 - Write out the possibilities that begin with R.
+
+\item Person 2 - Write out the possibilities that begin with B.
+
+\item Person 3 - Write out the possibilities that begin with Y.
+
+\item Person 4 - Write out the possibilities that begin with G.
+
+\end{itemize}
+
+\item In how many ways can five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
+
+\begin{itemize}
+
+\item Person 1 - Write out the possibilities that begin with PR.
+
+\item Person 2 - Write out the possibilities that begin with PB.
+
+\item Person 3 - Write out the possibilities that begin with PY.
+
+\item Person 4 - Write out the possibilities that begin with PG.
+
+\end{itemize}
+
+\item In how many ways can $n$ colored balls be arranged in order?
+
+\item In how many ways can three balls from among five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
+
+\begin{itemize}
+
+\item Person 1 - Write out the possibilities that begin with R.
+
+\item Person 2 - Write out the possibilities that begin with B.
+
+\item Person 3 - Write out the possibilities that begin with Y.
+
+\item Person 4 - Write out the possibilities that begin with G.
+
+\item Person 5 - Write out the possibilities that begin with P.
+
+\end{itemize}
+
+\item In how many ways can $k$ balls from among $n$ colored balls be arranged in order?
+
+\item How many of the permutations in problem 6 contain the colors R,G,B in some order? In other words, how many ways are there to order the colors R,G,B. How is this related to problem 2?
+
+\item In how many ways can $k$ balls from among $n$ colored balls be chosen, if order doesn't matter? In other words, how many combinations are there?
+
+\newpage
+
+\item The notation for the number of combinations of $k$ balls from a total of $n$ balls is 
+
+read '$n$ choose $k$' and denoted
+
+\[
+\left( {\begin{array}{*{20}c}
+n \\
+k\\
+\end{array}} \right)
+\]
+
+Find 
+
+\[
+\left( {\begin{array}{*{20}c}
+6 \\
+3 \\
+\end{array}} \right)
+\]
+
+and  
+
+\[
+\left( {\begin{array}{*{20}c}
+9 \\
+2 \\
+\end{array}} \right)
+\]
+
+\item
+
+Show the recursion in Pascal's Triangle works for combinations in this example: Show that the number of combinations of 4 colors chosen from 10 equals the number of combinations of 4 colors chosen from 9 plus the number of combinations of 3 colors chosen from 9. Hint: Examine the 10th color. In how many combinations is the 10th color present? In how many combinations is the 10th color not present?
+
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+\end{document}

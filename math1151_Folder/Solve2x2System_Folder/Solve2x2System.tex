@@ -1,0 +1,111 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{hyperref}
+
+\title{Solving Systems of Linear Equations}
+\author{MathCEP}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+
+
+
+\begin{document}
+
+\begin{abstract}
+  In this activity, you will discover the issue involved in using the Law of Sines and Law of Cosines to solve triangles.
+\end{abstract}
+
+\maketitle
+
+\begin{enumerate}
+
+\item Person 1 - Solve the following system of linear equations for $x$.
+
+\begin{center}
+$ax+by=p$
+
+$cx+dy=q$
+\end{center}
+
+by doing the following.
+
+\bigskip
+
+\begin{itemize}
+\item Multiply the top equation by $d$.
+\item Multiply the bottom equation by $-b$
+\item Add the two new equations.
+\item Solve for $x$
+\end{itemize}
+
+Person 2 - Solve the following system of linear equations for $y$.
+
+\begin{center}
+$ax+by=p$
+
+$cx+dy=q$
+\end{center}
+
+by doing the following.
+
+\bigskip
+
+\begin{itemize}
+\item Multiply the top equation by $-c$.
+\item Multiply the bottom equation by $a$
+\item Add the two new equations.
+\item Solve for $y$
+\end{itemize}
+
+\item Solve the following system of linear equations for $x$.
+
+\begin{center}
+$ex+fy+gz=r$
+
+$hx+iy+jz=s$
+
+$kx+ly+mz=t$
+\end{center}
+
+by doing the following.
+
+\bigskip
+
+\begin{itemize}
+\item Multiply the top equation by $-j$.
+\item Multiply the middle equation by $g$
+\item Add the two new equations to get equation (*).
+\item Multiply the bottom equation by $-j$.
+\item Multiply the middle equation by $m$
+\item Add the two new equations to get equation (**).
+\item Solve the system of equations (*) and (**).
+\end{itemize}
+\end{enumerate}
+\end{document}

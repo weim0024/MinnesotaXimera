@@ -1,0 +1,120 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{hyperref}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+
+\title{Completing the Square}
+\author{Univ. of Minnesota MathCEP}
+
+\begin{document}
+
+\begin{abstract}
+  In this activity, you will learn how to `complete the square' to write the equation of a circle and of a parabola in standard form.
+\end{abstract}
+
+\maketitle
+
+\begin{enumerate}
+
+\item Expand 
+
+\begin{itemize}
+
+\item $(x+1)(x+1)$
+
+\item $(x+4)^2$
+
+\item $2(x-3)^2$
+
+\end{itemize}
+
+\item Factor
+
+\begin{itemize}
+
+\item $x^2+6x+9$
+
+\item $2x^2+8x+8$
+
+\end{itemize}
+
+\item Supply the missing constant so that the following functions are perfect squares. Write each function in both the expanded form and the factored form.
+
+\begin{itemize}
+
+\item	$f(x) = x^2 - 8x +$
+
+\item $g(x) = x^2 - 7x +$
+
+\item $h(x) = x^2 - \frac{7}{3}x +$
+
+\item $j(x) = 3x^2 - 7x +$ 
+
+(Hint: Factor out the $3$ first, then supply the missing constant, then distribute the $3$ back in.)
+
+\end{itemize}
+
+\item Comparing the factored form $f(x) = A(x+m)^2$ to the expanded form $f(x) = ax^2 + bx + c$, what is the relationship between $A$, $m$ and $a$, $b$, $c$. 
+
+\item If you begin with $f^*(x) = ax^2 + bx$, how do you find $c$ so that $f(x) = ax^2 + bx + c$ will factor as a perfect square?
+
+\newpage
+
+\item Find the vertex of the following parabola by moving the constant to the left side, completing the square on the right side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$y = x^2 + 6x + 3$$
+
+\item Find the vertex of the following parabola by moving the constant to the left side, completing the square on the right side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$y = x^2 + bx + c$$
+
+\item Find the vertex of the following parabola by moving the constant to the left side, dividing by the coefficient on $x^2$, completing the square on the right side, adding the same constant to both sides, finding a common denominator on the left side, simplifying, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$y = 2x^2 + 5x + 3$$
+
+Alternate approach: Find the vertex of the following parabola by moving the constant to the left side, factoring out the coefficient on $x^2$, completing the square on the right side, distributing the constant back in on the right hand side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$y = 2x^2 + 5x + 3$$
+
+\item Find the vertex of the following parabola. $y = ax^2 + bx + c$
+
+\item Solve the equation
+
+\[ ax^2 + bx + c = 0 \]
+
+by moving the $c$ to the right side, dividing by $a$, completing the square, adding the same constant to both sides, taking a square root, and subtracting the constant term on the left to get $x$ by itself.
+
+\end{enumerate}
+
+\end{document}
+
+
+\end{document}

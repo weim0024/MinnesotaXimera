@@ -1,0 +1,247 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{hyperref}
+
+\title{Inverse Functions}
+\author{Univ. of Minnesota MathCEP}
+
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+\begin{document}
+
+\begin{abstract}
+  In this activity, you will discover the relationship between functions and inverse functions.
+\end{abstract}
+
+\maketitle
+
+\begin{problem}
+Write the operation of adding 3 as a function of $x$:
+
+$y= \answer{x+3}$.
+
+What operation undoes adding 3? Write this operation as a function of $x$.
+
+$y = \answer{x-3}$
+\end{problem}
+
+\begin{problem}
+Write the operation of subtracting 8 as a function of $x$:
+
+$y= \answer{x-8}$.
+
+What operation undoes subtracting 8? Write this operation as a function of $x$.
+
+$y=\answer{x+8}$
+\end{problem}
+
+\begin{problem}
+Write the operation of multiplying by $-2$ as a function of $x$:
+
+$y= \answer{-2x}$.
+
+What operation undoes multiplying by $-2$? Write this operation as a function of $x$.
+
+$y=\answer{\frac{x}{-2}}$
+
+\end{problem}
+
+\begin{problem}
+Write the operation of dividing by 6 as a function of $x$:
+
+$y= \answer{\frac{x}{6}}$.
+
+What operation undoes dividing by 6? Write this operation as a function of $x$.
+
+$y=\answer{6x}$
+
+\end{problem}
+
+\begin{problem}
+Write the operation of multiplying by 0 as a function of $x$:
+
+$y= \answer{0x}$.
+
+What operation undoes multiplying by 0? Write this operation as a function of $x$.
+
+$y=\answer{NA}$
+\end{problem}
+
+\begin{problem}
+Write the operation of taking a reciprocal as a function of $x$:
+
+$y= \answer{\frac{1}{x}}$.
+
+What operation undoes taking a reciprocal? Write this operation as a function of $x$.
+
+$y=\answer{\frac{1}{x}}$
+\end{problem}
+
+\begin{problem}
+Write the operation of squaring as a function of $x$:
+
+$y= \answer{x^2}$.
+
+What operation undoes squaring? Write this operation as a function of $x$.
+
+$y=\answer{\sqrt{x}}$
+\end{problem}
+
+\begin{problem}
+Write the operation of cubing as a function of $x$:
+
+$y= \answer{x^3}$.
+
+What operation undoes cubing? Write this operation as a function of $x$.
+
+$y=\answer{\sqrt[3]{x}}$
+\end{problem}
+
+\begin{problem}
+Write the operation of raising 10 to a power (e.g., when the input is 2, the output is $10^2$) as a function of $x$:
+
+$y= \answer{10^x}$.
+
+What operation undoes raising 10 to a power? Write this operation as a function of $x$.
+
+$y=\answer{\log_{10}(x)}$
+\end{problem}
+
+\begin{question}
+When is not possible to undo an operation?
+\begin{freeResponse}
+
+\end{freeResponse}
+
+
+How many of the operations above cannot truly be undone? $\answer{2}$
+\end{question}
+
+%%% Next section
+
+\begin{question}
+For each inverse function above, solve that equation for $x$. What is the relationship between the equation of a function and its inverse?
+\begin{freeResponse}
+
+\end{freeResponse}
+
+\end{question}
+
+\begin{problem}
+Solve $1=x+3$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $-10=x-8$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $4=-2x$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $-\frac{1}{3}=\frac{x}{6}$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $0=0x$ for $x$.
+
+$x=\answer{NA}$
+\end{problem}
+
+\begin{problem}
+Solve $4=x^2$ for $x$.
+%%% Unsure what to do when there are multiple answers.
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $8=x^3$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{problem}
+Solve $0.01=10^x$ for $x$.
+
+$x=\answer{-2}$
+\end{problem}
+
+\begin{question}
+How do the steps used to solve these equations relate to solving for the inverse functions you came up with in the previous section?
+\begin{freeResponse}
+
+\end{freeResponse}
+\end{question}
+
+\begin{question}
+Which of the equations produced multiple answers?
+\begin{selectAll}
+  \choice{adding 3}
+  \choice{subtracting 8}
+  \choice{multiplying by $-2$}
+  \choice{dividing by 6}
+  \choice[correct]{multiplying by 0}
+  \choice{taking a reciprocal}
+  \choice[correct]{squaring}
+  \choice{cubing}
+  \choice{raising $10$ to a power}  
+\end{selectAll}
+
+\end{question}
+
+\begin{question}
+For each of the operations described above, graph the function and its inverse. (You may want to use https://www.desmos.com/calculator)
+
+What is the relationship between the graph of a function and its inverse?
+\begin{freeResponse}
+
+\end{freeResponse}
+
+\end{question}
+
+\begin{question}
+Examining the graphs above, what property of the function is necessary so that the inverse function produces just one answer? What happens when this property is lacking?
+\begin{freeResponse}
+
+\end{freeResponse}
+
+\end{question}
+
+
+\end{document}

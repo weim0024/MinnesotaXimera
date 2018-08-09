@@ -1,0 +1,184 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex
+  \xetexorluatextrue
+\else
+  \ifluatex
+    \xetexorluatextrue
+  \else
+    \xetexorluatexfalse
+  \fi
+\fi
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{hyperref}
+
+\title{General Graphing}
+\author{Univ. of Minnesota MathCEP}
+
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+% Fixing the enumeration:
+\renewcommand{\theenumi}{\arabic{enumi}.}
+
+\begin{document}
+
+\begin{abstract}
+In this activity, you will discover how translations, reflections, and magnifications affect the shape of a graph.
+
+For this activity, you may wish to split yourself into groups to work on the various aspects of each graphing problem.
+\end{abstract}
+
+\maketitle
+
+The Desmos graph below displays the graph of some common functions that you will be using in this activity. By the end of this activity, you should be able to graph a function that has been translated, reflected, or magnified, knowing what the original function looks like.
+
+\desmos{hu4qn55rlq}{}{250}
+
+\section{Translations}
+\begin{problem} Graph the following functions by hand or on Desmos to understand how translations affect the shape of a graph.
+
+\begin{itemize}
+\item Group 1: Graph $y = x^2$, $y = x^2 + 4$ and $y = x^2 - 2$.
+\item Group 2: Graph $y = x^2$, $y = (x-3)^2$ and $y = (x+1)^2$.
+\item Group 3: Graph $y = x$, $y = x+3$ and $y=x-1$.
+\end{itemize}
+\end{problem}
+
+\begin{question}
+Compare the graphs of $y=(x+5)^2$ and $y=x^2+5$. Which of the following is a {\bf horizontal} translation of the graph $y=x^2$?
+\begin{multipleChoice}
+\choice[correct]{$y=(x+5)^2$}
+\choice{$y=x^2+5$}
+\end{multipleChoice}
+\end{question}
+
+
+\begin{question}
+What affect will adding $D$ to a function value have on a graph? What affect will adding $C$ to the input value ($x$) before applying the function have on the graph?
+\end{question}
+
+\begin{question}
+Interpret $y = x-1$ and $y = (x-1)$ in two different ways and show that their graphs will be the same.
+\end{question}
+
+\begin{problem}
+As a group, graph $y = \displaystyle{\frac{1}{x}}$, $y = \displaystyle{\frac{1}{(x-3)}}$ and $y = \displaystyle{\frac{1}{x} + 2}$.
+\end{problem}
+
+\begin{question}
+If you know what the graph of $y = \sin x$ looks like, can you describe what the graph of $y = (\sin x) + 4$ and $y = \sin (x-\frac{\pi}{4})$ look like?
+\end{question}
+
+\section{Reflections}
+
+\begin{problem}
+Graph the following functions by hand or with Desmos to understand the effect that relfections have on the shape of a graph.
+\begin{enumerate}
+\item Group 1: Graph $y = e^x$, $y = e^{-x}$, $y=-e^x$ and $y = -e^{-x}$
+\item Group 2: Graph $y = \ln x$, $y = \ln (-x)$, $y = - \ln x$ and $y = - \ln (-x)$
+\item Group 3: Graph $y = \sqrt x$, $y = \sqrt {-x}$, $y = - \sqrt x$ and $y = - \sqrt {-x}$
+\end{enumerate}
+\end{problem}
+
+\begin{question}
+Compare the graphs of $y=\sqrt{-x}$ and $y=-\sqrt{x}$. Which of the following is a {\bf vertical} reflection of the graph $y=\sqrt{x}$?
+\begin{multipleChoice}
+\choice{$y=\sqrt{-x}$}
+\choice[correct]{$y=-\sqrt{x}$}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}
+What affect will placing a negative sign in front of the function value do to the graph? What affect will placing a negative sign on the input value before applying the function have on the graph?
+\end{question}
+
+\begin{problem}
+As a group, graph $y = x^2$, $y = -x^2$, $y = (-x)^2$ and $y = -(-x)^2$.
+\end{problem}
+
+\begin{question}
+Why do the graphs of $y = x^2$ and $y = (-x)^2$ look the same? Give two reasons, one by simplifying the second equation algebraically, the second by interpreting the effect of the negative sign on the graph.
+\end{question}
+
+\begin{question}
+If you know what the graph of $y = \sin x$ looks like, can you describe what the graph of $y = - \sin x$ and $y = \sin (-x)$ look like?
+\end{question}
+
+
+\section{Magnifications}
+
+\begin{problem}
+Graph the following functions by hand or with Desmos to determine how magnifications affect the shape of a graph.
+\begin{itemize}
+\item Group 1: Graph $y = \ln x$, $y = 4 \ln x$ and $y = \ln {(4x)}$. (Make special note of where the graph crosses the x-axis.)
+\item Group 2: Graph $y = \sqrt x$, $y = 2 \sqrt x$ and $y = \sqrt {2x}$.
+\item Group 3: Graph $y = \frac{1}{x}$, $y = \frac{2}{x}$ and $y = \frac{1}{2x}$. 
+\end{itemize}
+\end{problem}
+
+\begin{question}
+Consider the graph of the function $y=\sqrt{2x}$. Which of the following functions will give the same graph? Justify your answer algebraically, and by interpreting the affect of magnifications on a graph.
+\begin{multipleChoice}
+\choice{$y=2\sqrt{x}$}
+\choice[correct]{$y=\sqrt{2}\sqrt{x}$}
+\end{multipleChoice}
+\end{question}
+
+
+\begin{question}
+What affect will multiplying $A$ to a function value have on a graph? What affect will multiplying $B$ to the input value ($x$) before applying the function have on the graph?
+\end{question}
+
+\begin{question}
+If you know what the graph of $y = \sin x$ looks like, can you describe what the graph of $y = A \sin x$ and $y = \sin (Bx)$ look like?
+\end{question}
+
+\section{Summary}
+
+Suppose you know the graph of a function $y = f(x)$ and the transformed graph $y = \pm A \cdot f(\pm Bx + C) +D$.
+
+\begin{question}
+Which things in the transformation affect the graph horizontally (left and right) and which affect the graph vertically (top and bottom)?
+\end{question}
+
+\begin{question}
+How does a multiplier affect the graph? a minus sign? a number added? 
+\end{question}
+
+\begin{question}
+If you know the graph of $y = f(x)$, how can you find the graph of $y = -5 f(4x) - 3$? the graph of $y = -5 f(4x + 2) - 3$? 
+\end{question}
+
+\begin{question}
+Given the graph of $y=f(x)$, when graphing $y = -5 f(4x + 2) - 3$ above, which transformation should be performed first?
+\begin{multipleChoice}
+\choice{Reflect the graph vertically.}
+\choice{Magnify the graph vertically by a factor of $5$.}
+\choice[correct]{Magnify the graph horizontally by a factor of $4$.}
+\choice{Translate the graph horizontally by $2$ units.}
+\choice{Translate the graph vertically by $-4$ units.}
+\end{multipleChoice}
+
+\end{question}
+
+
+
+
+\end{document}

@@ -1,0 +1,187 @@
+\documentclass[number]{ximera}
+
+%My github password is ximera1
+%My GeoGebra password is Ximera1
+
+% set font encoding for PDFLaTeX, XeLaTeX, or LuaTeX
+%\usepackage{ifxetex,ifluatex}
+%\newif\ifxetexorluatex
+%\ifxetex
+%  \xetexorluatextrue
+%\else
+%  \ifluatex
+%    \xetexorluatextrue
+%  \else
+%    \xetexorluatexfalse
+%  \fi
+%\fi
+
+%\ifxetexorluatex
+%  \usepackage{fontspec}
+%\else
+%  \usepackage[T1]{fontenc}
+%  \usepackage[utf8]{inputenc}
+%  \usepackage{lmodern}
+%\fi
+
+%\usepackage{hyperref}
+
+% Enable SageTeX to run SageMath code right inside this LaTeX file.
+% http://mirrors.ctan.org/macros/latex/contrib/sagetex/sagetexpackage.pdf
+% \usepackage{sagetex}
+
+% Fixing the numbering:
+\renewcommand{\theenumi}{\arabic{enumi}.}
+
+
+\title{Completing the Square}
+\author{Univ. of Minnesota MathCEP}
+
+\begin{document}
+
+\begin{abstract}
+  In this activity, you will learn how to `complete the square' of a polynomial, that is, you will learn how to modify a polynomial such that it can be written as a perfect square. This tool will allow us to rewrite polynomial equations in the standard form of circles, ellipses, and parabolas.
+\end{abstract}
+
+\maketitle
+\section{Expanding and factoring}
+
+Expand the following polynomials as much as possible.
+
+\begin{problem}
+$(x+1)(x+1)=\answer{x^2+2x+1}$
+\end{problem}
+
+\begin{problem}
+$(x+4)^2 = \answer{x^2+8x+16}$
+\begin{hint}
+$(x+4)^2=(x+4)(x+4)$
+\end{hint}
+\end{problem}
+
+\begin{problem}
+$2(x-3)^2 = \answer{2x^2-12x+18}$
+\end{problem}
+
+Factor the following polynomials.
+
+\begin{problem}
+$x^2+6x+9 = \answer{(x+3)^2}$
+\end{problem}
+
+\begin{problem}
+$2x^2+8x+8 = \answer{2(x+4)^2}$
+\begin{hint}
+$2x^2+8x+8 = 2(x^2+4x+4)$
+\end{hint}
+\end{problem}
+
+\section{Completing the square.}
+Supply the missing constant so that the following functions are perfect squares. Write each function in both the expanded form and the factored form.
+
+\begin{problem}
+$f(x) = x^2 - 8x +\answer{16}$
+
+$f(x) = \left(\answer{x-4}\right)^2$
+\end{problem}
+
+\begin{problem}
+$g(x) = x^2 - 7x + \answer{\frac{49}{4}}$
+
+$g(x) = \left(\answer{x-\frac{7}{2}}\right)^2$
+\end{problem}
+
+\begin{problem}
+$h(x) = x^2 - \frac{7}{3}x +\answer{\frac{49}{36}}$
+
+$h(x) = \left(\answer{x-\frac{7}{6}}\right)^2$
+\end{problem}
+
+\begin{problem}
+$j(x) = 3x^2 - 7x + \answer{\frac{49}{36}}$ 
+
+$j(x) = \answer{3}\left(\answer{x-\frac{7}{6}}\right)^2$
+
+\begin{hint}Factor out the $3$ first, then supply the missing constant.
+\end{hint}
+\end{problem}
+
+\begin{question}
+Comparing the factored form $f(x) = A(x+m)^2$ to the expanded form $f(x) = ax^2 + bx + c$, what is the relationship between $A$, $m$ and $a$, $b$, $c$?
+
+$a = \answer{A}$
+
+$b = \answer{2Am}$
+
+$c = \answer{Am^2}$
+\end{question}
+
+\begin{question}
+If you begin with $f^*(x) = ax^2 + bx$, how do you find $c$ so that $f(x) = ax^2 + bx + c$ will factor as a perfect square?
+
+$f^*(x) = ax^2 + bx + \answer{\frac{b^2}{4a^2}}$
+\end{question}
+
+\begin{question}
+Find the vertex of the following parabola by moving the constant to the left side, completing the square on the right side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$x^2 + 6x + 3 = \answer{1}(\answer{x+3})^2+\answer{-6}$$
+
+\begin{hint}
+$h,k$ may be negative.
+\end{hint}
+
+\begin{hint}
+What is the coefficient of a variable without a number out front?
+\end{hint}
+
+
+\end{question}
+
+\begin{question}
+Find the vertex of the following parabola by moving the constant to the left side, completing the square on the right side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$x^2 + bx + c = \answer{1}\left(x-\answer{-\frac{b}{2}}\right)^2 + \answer{c-\frac{b^2}{4}}$$
+\end{question}
+
+\begin{question}
+Find the vertex of the following parabola by moving the constant to the left side, dividing by the coefficient on $x^2$, completing the square on the right side, adding the same constant to both sides, finding a common denominator on the left side, simplifying, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$2x^2 + 5x + 3 = \answer{2}\left(\answer{x+\frac{5}{2}}\right)^2+\answer{3-\frac{25}{2}}$$
+
+\begin{hint}
+$\frac{y-3}{2} = x^2 +\frac{5}{2}x$.
+\end{hint}
+
+\end{question}
+
+\begin{question}
+Alternate approach: Find the vertex of the following parabola by moving the constant to the left side, factoring out the coefficient on $x^2$, completing the square on the right side, distributing the constant back in on the right hand side, adding the same constant to both sides, then writing in standard form $y = a(x-h)^2 + k$.
+
+$$2x^2 + 5x + 3 = \answer{2}\left(\answer{x+\frac{5}{2}}\right)^2+\answer{3-\frac{25}{2}}$$
+
+\begin{hint}
+$y-3 = 2(x^2+\frac{5}{2}x)$
+\end{hint}
+\end{question}
+
+\begin{problem}
+Find the vertex of the following parabola: $y = ax^2 + bx + c$
+
+$(h,k) = \left(\answer{\frac{-b}{2a}},\answer{c-\frac{b^2}{4a}}\right)$
+\end{problem}
+
+\begin{problem}
+ Solve the equation
+
+\[ ax^2 + bx + c = 0 \]
+
+by moving the $c$ to the right side, dividing by $a$, completing the square, adding the same constant to both sides, taking a square root, and subtracting the constant term on the left to get $x$ by itself.
+
+\[x=\answer{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}\]
+\end{problem}
+
+\end{document}
+
+
+\end{document}
