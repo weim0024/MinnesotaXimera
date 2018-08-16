@@ -18,95 +18,133 @@
 \begin{document}
 
 \begin{abstract}
-  In this activity, you will discover the issue involved in using the Law of Sines and Law of Cosines to solve triangles.
+In the previous activity, we derived formulas for $\cos(A+B)$ and $\cos(A-B)$ in terms of $\cos(A),\sin(A),\cos(B)$, and $\sin(B)$.
+In this activity, we will use those formulas to derive angle-sum and angle-difference formulas for the sine and tangent functions.
 \end{abstract}
 
 \maketitle
 
-\begin{enumerate}
-
-\item In Part I, we developed the following formulas:
-
+The goal of the first half of this activity is to derive the angle-sum and angle-difference formulas for sine.
+Recall that in the activity ``Angle Sum Formulas - Part I,'' we developed formulas for the cosine of the sum and difference of two arbitrary angles:
 \[ \cos(A+B) = \cos A \cos B - \sin A \sin B \]
 
 \[ \cos(A-B) = \cos A \cos B + \sin A \sin B \]
 
-Use the first formula to find a formula for
+\begin{problem}
+Use the formula for $\cos(A+B)$ to find an expression for $\cos(90^\circ + \theta)$.
+\[\cos(90^\circ + \theta) = \answer{-\sin(\theta)}\]
+\begin{hint}
+Rewrite the expression with $A=90^\circ$ and $B=\theta$. Are there any expressions we can evaluate in order to simplify the formula?
+\end{hint}
+\begin{hint}
+What is $\cos(90^\circ)$? What is $\sin(90^\circ)$?
+\end{hint}
 
-\[ \cos(90^\circ + \theta) \]
+\end{problem}
 
-\item
+It is also true that \[\sin(90^\circ+\theta) = \cos(\theta).\]
+\begin{question}
+(Optional) Why does $\sin(90^\circ+\theta)=\cos(\theta)$?
+\begin{freeResponse}
 
-It is also true that 
+\end{freeResponse}
+\end{question}
 
-\[ \sin(90^\circ + \theta) = \cos \theta \]
+You will use this information to develop formulas for the sine of the sum and difference of two angles.
 
-(This can be a bonus problem to be proved by the students)
+\begin{problem}
+Let $\theta = M+N$. Use the formula for $\cos(90^\circ+\theta)$ to show that
+\[\sin(M+N)=-\cos(90^\circ+M+N).\]
+By the expression you derived in Problem 1 for $\cos(90^\circ+\theta)$,
+\[\cos(90^\circ+M+N) = \answer{-\sin(M+N)}.\]
+Hence,
+\[\sin(M+N)=\answer{-\cos(90^\circ+M+N)}.\]
+\begin{hint}
+In the expression for $\cos(90^\circ+\theta)$, replace instances of $\theta$ with $M+N$.
+\end{hint}
+\end{problem}
 
-\item Let $\theta = M+N$. 
+\begin{problem}
+Start with the formula for $\cos(A+B)$, letting $A=90^\circ+M$ and $B=N$ to write a formula for $-\cos(90^\circ+M+N)$.
+\[\cos(90^\circ+M+N)=\cos(\answer{90^\circ+M})\cos(\answer{N})-\sin(\answer{90^\circ+M})\sin(\answer{N}).\]
+Hence,
+\[-\cos(90^\circ+M+N)=\answer{\sin(90^\circ+M)\sin(N)-\cos(90^\circ+M)\cos(N)}.\]
+\begin{hint}
+How does the formula for $-\cos(90^\circ+M+N)$ differ from the formula for $\cos(90^\circ+M+N)$?
+\end{hint}
 
-Use the formula for $\cos(90^\circ + \theta)$ to show that
+\end{problem}
 
-\[\sin(M+N) = - \cos(90^\circ + M + N) \]
-
-\item Use the formula for $\cos(A+B)$, letting $A = 90^\circ + M$ and $B = N$ to write a formula for $ - \cos(90^\circ + M + N) $
-
-\item Simplify the previous expression using the formulas found in problems 1 and 2.
-
-\item Combine problems 3, 4 and 5 to derive a formula for $\sin(M+N)$.
-
-\item In problem 3) of Part I, you used a process to convert the formula for $\cos(A-B)$ to a formula for $\cos(A+B)$. Use this same process to convert the formula for $\sin(M+N)$ to a formula for $\sin(M-N)$.
-
-\newpage
-
-\item Summarize your results:
-
+\begin{problem}
+To simplify this expression, recall the substitutions described earlier in this activity:
 \begin{itemize}
-
-\item $\cos(A-B) = $
-
-\vskip 0.5 cm
-
-\item $\cos(A+B) = $
-
-\vskip 0.5 cm
-
-\item $\sin(A-B) = $
-
-\vskip 0.5 cm
-
-\item $\sin(A+B) = $
-
+\item $\cos(90^\circ+\theta)=\answer{-\sin(\theta)}$
+\item $\sin(90^\circ+\theta)=\answer{\cos(\theta)}$
 \end{itemize}
 
-\item Find formulas for $\tan (A-B)$ and $\tan (A+B)$ as follows:
+\end{problem}
+
+\begin{problem}
+Combine the previous two problems to simplify the expression in Problem 4:
+\[-\cos(90^\circ+M+N)=\answer{\cos(M)\sin(N)+\sin(M)\cos(N)}.\]
+\begin{hint}
+Substitute $\theta$ for $M$.
+\end{hint}
+
+\end{problem}
+
+\begin{problem}
+Combine Problems 3-6 to derive a formula for $\sin(M+N)$.
+\[\sin(M+N)=\answer{\cos(M)\sin(N)+\sin(M)\cos(N)}\]
+\end{problem}
+
+\begin{problem}
+In the activity ``Angle Sum Formulas - Part I,'' you used a process to convert the formula for $\cos(A-B)$ to a formula for $\cos(A+B)$. Use this same process to convert the formula for $\sin(M+N)$ to a formula for $\sin(M-N)$.
+\[\sin(M-N)=\answer{\sin(M)\cos(N)-\cos(M)\sin(N)}\]
+\begin{hint}
+$M-N=M+(-N)$
+\end{hint}
+
+\end{problem}
+
+\begin{problem}
+Summarize your results:
+\begin{itemize}
+
+\item $\cos(A-B) = \answer{\cos(A)\cos(B)-\sin(A)\sin(B)}$
+\item $\cos(A+B) = \answer{\cos(A)\cos(B)+\sin(A)\sin(B)}$
+\item $\sin(A-B) = \answer{\sin(A)\cos(B)-\cos(A)\sin(B)}$
+\item $\sin(A+B) = \answer{\sin(A)\cos(B)+\cos(A)\sin(B)}$
+\end{itemize}
+\begin{hint}
+Substitute $M=A$ and $N=B$ from the previous problem to get formulas for $\sin(A-B)$ and $\sin(A+B)$.
+\end{hint}
+
+\end{problem}
+
+
+In the next part of this activity, we will use the angle sum and angle difference formulas for sine and cosine to derive the angle sum and difference formulas for tangent.
+
+\begin{problem}
+Recall the definition of $\tan(\theta)=\frac{\answer{\sin(\theta)}}{\answer{\cos(\theta)}}$.
+\end{problem}
+
+\begin{problem}
+Find formulas for $\tan (A-B)$ and $\tan (A+B)$ as follows:
 
 \begin{enumerate}
-
-\item Write $\tan (A-B)$ as $\quad \displaystyle{\frac{\sin (A-B)}{\cos (A-B)}}$, then use 8) to rewrite in terms of $\sin A$, $\sin B$, $\cos A$ and $\cos B$.
-
+\item Write $\tan (A-B)$ as $\frac{\sin (A-B)}{\cos (A-B)}$, and rewrite that in terms of $\sin A$, $\sin B$, $\cos A$ and $\cos B$.
 \item Divide both the numerator and denominator by $\cos (A) \cos(B)$ and simplify.
-
 \item Rewrite in terms of $\tan (A)$ and $\tan(B)$. 
-
 \item Repeat the process for $\tan (A+B)$
-
 \item Summarize your results.
-
-\vskip 0.25 cm
-
-\begin{itemize}
-
-\item $\tan(A-B) = $
-
-\vskip 0.5 cm
-
-\item $\tan(A+B) = $
-
-\end{itemize}
-
-
+  \begin{itemize}
+  \item $\tan(A-B)=\answer{\frac{\tan(A)-\tan(B)}{1+\tan(A)\tan(B)}}$
+  \item $\tan(A+B)=\answer{\frac{\tan(A)+\tan(B)}{1-\tan(A)\tan(B)}}$
+  \end{itemize}
 \end{enumerate}
 
-\end{enumerate}
+\end{problem}
+
+
 \end{document}
