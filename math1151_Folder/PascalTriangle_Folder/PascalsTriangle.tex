@@ -42,63 +42,87 @@
 
 \maketitle
 
-\begin{enumerate} 
+\begin{question}
+In how many ways can two colored balls, red (R) and blue (B) be arranged in order?
 
-\item In how many ways can two colored balls, red (R) and blue (B) be arranged in order?
+Answer: $\answer{2}$ ways
+\begin{hint}
+$RB$ and $BR$
+\end{hint}
+\end{question}
 
-\bigskip
+\begin{question}
+In how many ways can three colored balls, red (R), blue (B) and yellow (Y) be arranged in order? 
 
-{\bf {Answer:}} 2 - RB and BR
+Answer: $\answer{6}$ ways
 
-\item In how many ways can three colored balls, red (R), blue (B) and yellow (Y) be arranged in order? Write out the complete list.
+Write out the complete list:
+\begin{freeResponse}
+\end{freeResponse}
+\begin{hint}
+Try starting by writing all of the arrangements that start with red (R).
+\end{hint}
+\end{question}
 
-\item In how many ways can four colored balls, red (R), blue (B), yellow (Y) and green (G) be arranged in order?
-
+\begin{question}
+In how many ways can four colored balls, red (R), blue (B), yellow (Y) and green (G) be arranged in order?
 \begin{itemize}
-
-\item Person 1 - Write out the possibilities that begin with R.
-
-\item Person 2 - Write out the possibilities that begin with B.
-
-\item Person 3 - Write out the possibilities that begin with Y.
-
-\item Person 4 - Write out the possibilities that begin with G.
-
+\item Person 1 - Write out the possibilities that begin with R. How many are there? $\answer{6}$
+\item Person 2 - Write out the possibilities that begin with B. How many are there? $\answer{6}$
+\item Person 3 - Write out the possibilities that begin with Y. How many are there? $\answer{6}$
+\item Person 4 - Write out the possibilities that begin with G. How many are there? $\answer{6}$
 \end{itemize}
+Hence, there are $\answer{24}$ ways that four colored balls can be arranged in order.
+\end{question}
 
-\item In how many ways can five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
-
+\begin{question}
+In how many ways can five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
 \begin{itemize}
-
 \item Person 1 - Write out the possibilities that begin with PR.
-
 \item Person 2 - Write out the possibilities that begin with PB.
-
 \item Person 3 - Write out the possibilities that begin with PY.
-
 \item Person 4 - Write out the possibilities that begin with PG.
-
 \end{itemize}
+There are $\answer{120}$ ways five colored balls can be arranged in order.
+\begin{hint}
+How do your answers to this question compare to your answers for the previous question?
+\end{hint}
+\begin{hint}
+As you write out the possibilities that begin with PR, PB, etc., find a pattern that helps you keep track of which ones you've already written down.
+\end{hint}
+\end{question}
 
-\item In how many ways can $n$ colored balls be arranged in order?
+\begin{question}
+In how many ways can $n$ colored balls be arranged in order? There are $\answer{n!}$ ways.
+\begin{hint}
+Your answer should be in terms of $n$.
+\end{hint}
+\end{question}
 
-\item In how many ways can three balls from among five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
-
+\begin{question}
+In how many ways can three balls from among five colored balls, red (R), blue (B), yellow (Y), green (G) and purple (P) be arranged in order?
 \begin{itemize}
-
 \item Person 1 - Write out the possibilities that begin with R.
-
 \item Person 2 - Write out the possibilities that begin with B.
-
 \item Person 3 - Write out the possibilities that begin with Y.
-
 \item Person 4 - Write out the possibilities that begin with G.
-
 \item Person 5 - Write out the possibilities that begin with P.
-
 \end{itemize}
+\begin{hint}
+One of the possibilities that begins with R is RBY.
+\end{hint}
+\end{question}
 
-\item In how many ways can $k$ balls from among $n$ colored balls be arranged in order?
+\begin{question}
+In how many ways can $k$ balls from among $n$ colored balls be arranged in order?
+
+There are $\answer{\frac{n!}{(n-k)!}}$ ways. %%% Or should I use "choose"?
+\begin{hint}
+There are $n!$ ways to arrange $n$ objects in order. If we are only looking to arrange $k$ of those balls in order, how many arrangements are unnecessary? %%% I don't know if I like this hint
+\end{hint}
+\end{question}
+
+\begin{enumerate} 
 
 \item How many of the permutations in problem 6 contain the colors R,G,B in some order? In other words, how many ways are there to order the colors R,G,B. How is this related to problem 2?
 
