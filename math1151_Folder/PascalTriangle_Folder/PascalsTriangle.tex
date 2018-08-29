@@ -108,6 +108,7 @@ In how many ways can three balls from among five colored balls, red (R), blue (B
 \item Person 4 - Write out the possibilities that begin with G.
 \item Person 5 - Write out the possibilities that begin with P.
 \end{itemize}
+There are $\answer{60}$ ways.
 \begin{hint}
 One of the possibilities that begins with R is RBY.
 \end{hint}
@@ -116,54 +117,61 @@ One of the possibilities that begins with R is RBY.
 \begin{question}
 In how many ways can $k$ balls from among $n$ colored balls be arranged in order?
 
-There are $\answer{\frac{n!}{(n-k)!}}$ ways. %%% Or should I use "choose"?
+There are $\answer{\frac{n!}{(n-k)!}}$ ways.
 \begin{hint}
 There are $n!$ ways to arrange $n$ objects in order. If we are only looking to arrange $k$ of those balls in order, how many arrangements are unnecessary? %%% I don't know if I like this hint
 \end{hint}
 \end{question}
 
-\begin{enumerate} 
+\begin{question}
+How many of the permutations in Problem 6 contain the colors R,G,B in some order? 
 
-\item How many of the permutations in problem 6 contain the colors R,G,B in some order? In other words, how many ways are there to order the colors R,G,B. How is this related to problem 2?
+In other words, there are $\answer{6}$ ways to order the colors R,G,B. 
 
-\item In how many ways can $k$ balls from among $n$ colored balls be chosen, if order doesn't matter? In other words, how many combinations are there?
+How is this related to Problem 2? 
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
 
-\newpage
+\begin{question}
+In how many ways can $k$ balls from among $n$ colored balls be chosen, if order doesn't matter? 
+In other words, how many combinations are there?
 
-\item The notation for the number of combinations of $k$ balls from a total of $n$ balls is 
+There are $\answer{\frac{n!}{(n-k)!k!}}$ ways.
+\begin{hint}
+How many arrangements of letter (in order) are treated as the same? Your expression will need to eliminate these redundant combinations.
+\end{hint}
+\end{question}
 
-read '$n$ choose $k$' and denoted
+The notation for the number of combinations of $k$ balls from a total of $n$ balls is read as '$n$ choose $k$' and is denoted by
 
 \[
 \left( {\begin{array}{*{20}c}
 n \\
 k\\
-\end{array}} \right)
+\end{array}} \right).
 \]
 
-Find 
+\begin{exercise}
+${6\choose{3}} = \answer{20}$
+\end{exercise}
 
-\[
-\left( {\begin{array}{*{20}c}
-6 \\
-3 \\
-\end{array}} \right)
-\]
+\begin{exercise}
+${9 \choose{2}}=\answer{36}$
+\end{exercise}
 
-and  
 
-\[
-\left( {\begin{array}{*{20}c}
-9 \\
-2 \\
-\end{array}} \right)
-\]
 
-\item
-
-Show the recursion in Pascal's Triangle works for combinations in this example: Show that the number of combinations of 4 colors chosen from 10 equals the number of combinations of 4 colors chosen from 9 plus the number of combinations of 3 colors chosen from 9. Hint: Examine the 10th color. In how many combinations is the 10th color present? In how many combinations is the 10th color not present?
-
-\end{enumerate}
+\begin{problem}
+Show the recursion in Pascal's Triangle works for combinations in this example: Show that the number of combinations of 4 colors chosen from 10 equals the number of combinations of 4 colors chosen from 9 plus the number of combinations of 3 colors chosen from 9. 
+\begin{hint}Examine the 10th color. In how many combinations is the 10th color present?
+\end{hint}
+\begin{hint}
+In how many combinations is the 10th color not present?
+\end{hint}
+\begin{freeResponse}
+\end{freeResponse}
+\end{problem}
 \end{document}
 
 
