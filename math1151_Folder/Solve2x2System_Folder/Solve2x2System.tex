@@ -39,73 +39,119 @@
 \begin{document}
 
 \begin{abstract}
-  In this activity, you will discover the issue involved in using the Law of Sines and Law of Cosines to solve triangles.
+  In this activity, you will discover formulas for the solutions of $2\times2$ linear systems.
 \end{abstract}
 
 \maketitle
 
-\begin{enumerate}
+Consider the following $2\times2$ linear system of equations. Our goal is to derive an expression for $x$ in terms of the letters $a,b,c,d,p,$ and $q$.
+\begin{eqnarray}
+ax+by&=&p\\
+cx+dy&=&q
+\end{eqnarray}
 
-\item Person 1 - Solve the following system of linear equations for $x$.
+\begin{problem}
+Multiply Equation (1) by $d$: $\answer{adx+bdy=pd}$
+\end{problem}
 
-\begin{center}
-$ax+by=p$
+\begin{problem}
+Multiply Equation (2) by $-b$: $\answer{-bcx-bdy=-bq}$
+\end{problem}
 
-$cx+dy=q$
-\end{center}
+\begin{problem}
+Add the two new equations from Problems 1 and 2:
 
-by doing the following.
+$\answer{adx-bcx+ bdy-bdy =pd-bq}$
+\begin{hint} You should have two terms whose sum is $0$ in order to eliminate the $y$ variable.  \end{hint}
+\end{problem}
 
-\bigskip
+\begin{problem}
+Solve for $x$ in your equation from Problem 3.
 
-\begin{itemize}
-\item Multiply the top equation by $d$.
-\item Multiply the bottom equation by $-b$
-\item Add the two new equations.
-\item Solve for $x$
-\end{itemize}
+$x=\answer{\frac{pd-bq}{ad-bc}}$
 
-Person 2 - Solve the following system of linear equations for $y$.
+\begin{hint} $adx-bcx=(ad-bc)x$ \end{hint}
+\end{problem}
 
-\begin{center}
-$ax+by=p$
+Next, we will solve for $y$ in the same $2\times2$ linear system given by Equations (1) and (2).
 
-$cx+dy=q$
-\end{center}
+\begin{problem}
+Multiply Equation (1) by $-c$: $\answer{-acx-bcy=-pc}$
+\end{problem}
 
-by doing the following.
+\begin{problem}
+Multiply Equation (2) by $a$: $\answer{acx+ady=qa}$
+\end{problem}
 
-\bigskip
+\begin{problem}
+Add the two new equations from Problems 5 and 6:
 
-\begin{itemize}
-\item Multiply the top equation by $-c$.
-\item Multiply the bottom equation by $a$
-\item Add the two new equations.
-\item Solve for $y$
-\end{itemize}
+$\answer{-acx+acx -bcy+ady=-pc+qa}$
+\begin{hint}There should be two terms that cancel out to eliminate the $x$ variable.\end{hint}
+\end{problem}
 
-\item Solve the following system of linear equations for $x$.
+\begin{problem}
+Solve for $y$ in your equation from Problem 7:
 
-\begin{center}
-$ex+fy+gz=r$
+$y=\answer{\frac{-pc+qa}{-bc+ad}}$
+\begin{hint}
+$-bcy+ady=(-bc+ad)y$
+\end{hint}
+\end{problem}
 
-$hx+iy+jz=s$
+%%%% 3x3
 
-$kx+ly+mz=t$
-\end{center}
+Lastly, we will solve for $x$ in the following $3\times3$ linear system of equations
+\begin{eqnarray}
+ex+fy+gz&=&r\\
+hx+iy+jz&=&s\\
+kx+ly+mz&=&t
+\end{eqnarray}
+by doing the following:
 
-by doing the following.
+\begin{problem}
+Multiply Equation (3) by $-j$: $\answer{-jex-jfy-jgz=-jr}$
+\end{problem}
 
-\bigskip
+\begin{problem}
+Multiply Equation (4) by $g$: $\answer{ghx+giy+gjz=gs}$
+\end{problem}
 
-\begin{itemize}
-\item Multiply the top equation by $-j$.
-\item Multiply the middle equation by $g$
-\item Add the two new equations to get equation (*).
-\item Multiply the bottom equation by $-j$.
-\item Multiply the middle equation by $m$
-\item Add the two new equations to get equation (**).
-\item Solve the system of equations (*) and (**).
-\end{itemize}
-\end{enumerate}
+\begin{problem}
+Add the two new equations from Problems 9 and 10:
+
+$\answer{-jex+ghx-jfy+giy-jgz+gjz=-jr+gs}$
+\begin{hint} There should be two terms that cancel out to eliminate the $z$ variable.\end{hint}
+\end{problem}
+
+\begin{problem}
+Multiply Equation (5) by $-j$: $\answer{-jkx-jly-jmz=-jt}$
+\end{problem}
+
+\begin{problem}
+Multiply Equation (4) by $m$: $\answer{mhx+miy+mjz=ms}$
+\end{problem}
+
+\begin{problem}
+Add the two new equations from Problems 12 and 13:
+
+$\answer{-jkx+mhx-jly+miy-jmz+mjz=-jt+ms}$
+\begin{hint} There should be two terms that cancel out to eliminate the $z$ variable.\end{hint}
+\end{problem}
+
+\begin{problem}
+Your equations in Problems 11 and 14 should be linear equations in the variables $x$ and $y$.
+These form a $2\times2$ linear system of equations that you can solve with the equations you came up with in Problems 4 and 8.
+\begin{hint}
+Your equations for $x$ and $y$ in Problems 4 and 8 were in terms of the variables $a,b,c,d,p,$ and $q$.
+In order to apply these formulas the the $2 \times 2$ linear system formed by the equations in Problems 11 and 14, you need to figure out what $a,b,c,d,p,$ and $q$ are equal to in terms of the variables $e,f,g,h,i,j,k,l,m,r,s,$ and $t$.
+\end{hint}
+\begin{hint}Match your equation from Problem 11 with Equation (1), and match your equation from Problem 14 with Equation (2).\end{hint}
+\begin{hint} For example, take $a=(gh-je)$.\end{hint}
+\begin{hint}Your answer will be much neater if you leave your terms in factored form, i.e., do not FOIL them out.\end{hint}
+\[x=\answer{\frac{(gs-jr)(mi-jl)-(gi-jf)(ms-jt)}{(gh-je)(mi-jl)-(gi-jf)(mh-jk)}}\]
+\[y=\answer{\frac{(ms-jt)(gh-je)-(gs-jr)(mh-jk)}{(gh-je)(mi-jl)-(gi-jf)(mh-jk)}}\]
+\end{problem}
+
+
 \end{document}
