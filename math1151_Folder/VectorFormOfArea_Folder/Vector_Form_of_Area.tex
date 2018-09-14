@@ -60,26 +60,95 @@ We wish to write the area of the triangle in terms of $a,b,c,d$
 \node at (0.7,0.5) {$\theta$};
  \end{tikzpicture}
 
-\begin{itemize}
+\begin{problem}
+Write the area of the triangle using $\sin \theta$, $||\overrightarrow u||$ and $||\overrightarrow v||$.
 
-\item Write the area of the triangle using $\sin \theta$, $||\overrightarrow u||$ and $||\overrightarrow v||$
+Area = $\answer{\frac{||\vec{u}||\cdot||\vec{v}||\sin(\theta)}{2}}$
+\begin{hint}
+Use the formula for the area of an SAS triangle, where the side lengths are $||\overrightarrow u||$ and $||\overrightarrow v||$, and $\theta$ is the angle between them.
+\end{hint}
+\end{problem}
 
-\item Find the direction of $\overrightarrow u$. That is, find $\theta_u$
+\begin{problem}
+Find the direction of $\overrightarrow u$. That is, find $\theta_u$.
 
-\item Find the direction of $\overrightarrow v$. That is, find $\theta_v$
+$\theta_u=\answer{\tan^{-1}\left(\frac{b}{a}\right)}$
+\begin{hint}
+Your answer should be in terms of the variables $a$ and $b$.
+\end{hint}
+\begin{hint}
+Which trig function relates an angle to the side-lengths of the triangle that it's a part of?
+\end{hint}
+\end{problem}
 
-\item Express $\theta$ in terms of $\theta_u$ and $\theta_v$
+\begin{problem}
+Find the direction of $\overrightarrow v$. That is, find $\theta_v$.
 
-\item Express $\sin \theta$ using inverse trig functions and $a,b,c,d$
+$\theta_v=\answer{\tan^{-1}\left(\frac{d}{c}\right)}$
+\begin{hint}
+You answer should be in terms of the variables $c$ and $d$.
+\end{hint}
+\begin{hint}
+Which trig function relates an angle to the side-lengths of the triangle that it's a part of?
+\end{hint}
+\end{problem}
 
-\item Use the angle sum/difference formula to write $\sin \theta$ in terms of $a,b,c,d$
+\begin{problem}
+Express $\theta$ in terms of $\theta_u$ and $\theta_v$.
 
-\item Write the area of the triangle in terms of $a,b,c,d$
+$\theta = \answer{\theta_u-\theta_v}$ %%%This answer can be ambiguous. Which one should I input? Or maybe make them all freeResponse?
+\begin{hint}
+What angle would you need to subtract from $\theta_u$ to get to $\theta_v$?
+\end{hint}
+\end{problem}
 
-\item If $\overrightarrow u = (5,1)$ and $\overrightarrow v = (4,-2)$, find the area. 
+\begin{problem}
+Express $\sin \theta$ using inverse trig functions and $a,b,c,d$.
 
-\item If $\overrightarrow u = (4,-2)$ and $\overrightarrow v = (5,1)$, find the area.  Do you need to adjust the formula?
+$\sin\theta=\answer{\sin(\theta_u)\cos(\theta_v)-\cos(\theta_u)\sin(\theta_v)}$
+\begin{hint}
+Apply the angle-difference formula for sine.
+\end{hint}
+\end{problem}
 
-\end{itemize}
+\begin{problem}
+Use your formula from above to write $\sin \theta$ in terms of $a,b,c,d$.
+
+$\sin\theta = \answer{\frac{bc-ad}{(a^2+b^2)(c^2+d^2)}}$
+\begin{hint}
+At first, you may have some compositions of trig functions with inverse trig functions. Draw the triangles determined by these expressions first to simplify your answer.
+\end{hint}
+\end{problem}
+
+\begin{problem}
+Write the area of the triangle in terms of $a,b,c,d$.
+
+Area = $\answer{\frac{bc-ad}{2}}$
+\begin{hint}
+Refer back to your formula for area in Problem 1.
+\end{hint}
+\begin{hint}
+Rewrite $||\vec{u}||$ and $||\vec{v}||$ in terms of the variables $a,b,c,d$.
+\end{hint}
+\end{problem}
+
+\begin{exercise}
+If $\overrightarrow u = (5,1)$ and $\overrightarrow v = (4,-2)$, find the area. 
+
+Area = $\answer{7}$
+\end{exercise}
+
+\begin{exercise}
+If $\overrightarrow u = (4,-2)$ and $\overrightarrow v = (5,1)$, find the area.  
+
+Area = $\answer{-7}$
+\end{exercise}
+
+\begin{question}
+Compare your answers to Exercises 8 and 9. Why are they different? Do you need to adjust your formula?
+\begin{freeResponse}
+
+\end{freeResponse}
+\end{question}
 
 \end{document}
